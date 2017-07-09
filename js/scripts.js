@@ -2,6 +2,9 @@ var list = document.getElementById('list');
 var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
-  list.innerHTML += '<li>item ' + itemsByTagName.length + '</li>';
+  list.innerHTML += '<li>item ' + list.childElementCount;
 });
-var itemsByTagName = document.getElementsByTagName('li');
+var itemsByTagName =  document.createTextNode('li.appendChild');
+
+
+
